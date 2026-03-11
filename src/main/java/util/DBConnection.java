@@ -15,7 +15,7 @@ public class DBConnection {
             con = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/eventdb",
                     "root",
-                    "password");
+                    "root");
 
         } catch (Exception e) {
             e.printStackTrace();
