@@ -43,10 +43,13 @@ pipeline {
         }
 
         stage('Start Tomcat Server') {
-            steps {
-                bat '"C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\bin\\startup.bat"'
-            }
-        }
+    steps {
+        bat '''
+        set CATALINA_HOME=C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1
+        %CATALINA_HOME%\\bin\\startup.bat
+        '''
+    }
+}
 
     }
 }
