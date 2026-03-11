@@ -37,4 +37,10 @@ public class RegisterServlet extends HttpServlet {
             resp.getWriter().println("Registration Failed");
         }
     }
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
+
+        resp.getWriter().println("Register Servlet Working");
+    }
 }
