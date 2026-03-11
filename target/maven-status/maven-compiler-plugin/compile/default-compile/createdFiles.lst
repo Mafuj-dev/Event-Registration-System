@@ -1,0 +1,8 @@
+dao\EventDAO.class
+controller\EventServlet.class
+controller\LoginServlet.class
+dao\UserDAO.class
+util\DBConnection.class
+model\Event.class
+controller\RegisterServlet.class
+model\User.class

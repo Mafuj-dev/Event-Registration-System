@@ -31,8 +31,7 @@ public class LoginServlet extends HttpServlet {
             HttpSession session = req.getSession();
             session.setAttribute("user", user);
 
-            resp.sendRedirect("events.jsp");
-
+            resp.sendRedirect(req.getContextPath() + "/events.jsp");
         } else {
 
             resp.getWriter().println("Invalid Login");

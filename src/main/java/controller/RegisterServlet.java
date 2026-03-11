@@ -32,8 +32,7 @@ public class RegisterServlet extends HttpServlet {
         UserDAO dao = new UserDAO();
 
         if (dao.registerUser(user)) {
-            resp.sendRedirect("login.jsp");
-        } else {
+        	resp.sendRedirect(req.getContextPath() + "/login.jsp");        } else {
             resp.getWriter().println("Registration Failed");
         }
     }
